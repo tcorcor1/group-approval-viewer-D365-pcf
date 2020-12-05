@@ -1,0 +1,32 @@
+ul {
+  margin-block-end: none;
+  margin-block-start: none;
+}
+
+.approvals-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.approvals-content {
+  width: 100%;
+  min-height: 300px;
+}
+
+.is-approved {
+  color: #20AD5A
+}
+
+.is-rejected {
+  color: #D51A1A
+}
+
+/*
+material-ui style overrides
+=============================================================
+*/
+
+.MuiPaper-elevation2 { 
+  box-shadow: none !important;
+}
