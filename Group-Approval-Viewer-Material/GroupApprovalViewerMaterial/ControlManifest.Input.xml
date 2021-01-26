@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <manifest>
-  <control namespace="tc" constructor="GroupApprovalViewer" version="1.0.0" display-name-key="Group Approval Viewer" description-key="Provides visibility into status of Power Automate group approvals" control-type="standard" preview-image="img/preview.png">
+  <control namespace="tc" constructor="GroupApprovalViewerMaterial" version="1.1.0" display-name-key="Group Approval Viewer (Material)" description-key="Provides visibility into status of Power Automate group approvals" control-type="standard" preview-image="img/preview.png">
     <property name="ApprovalId" display-name-key="Approval Id" description-key="Power Automate Approval Lookup" of-type="Lookup.Simple" usage="bound" required="true" />
     <property name="ViewerTitle" display-name-key="Viewer Title" description-key="Please provide a title for your approval grid" default-value="Approval Progress Summary" of-type="SingleLine.Text" usage="input" required="true" />
     <resources>

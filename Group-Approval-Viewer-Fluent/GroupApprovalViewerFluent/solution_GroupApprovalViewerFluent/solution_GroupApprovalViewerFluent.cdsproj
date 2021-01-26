@@ -8,7 +8,7 @@
   <Import Project="$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props" Condition="Exists('$(PowerAppsTargetsPath)\Microsoft.PowerApps.VisualStudio.Solution.props')" />
 
   <PropertyGroup>
-    <ProjectGuid>2738283d-77ea-4315-b724-1707a76e820a</ProjectGuid>
+    <ProjectGuid>d4cd636d-9e56-4ba8-97c9-f1513495bb73</ProjectGuid>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <!--Remove TargetFramework when this is available in 16.1-->
     <TargetFramework>net462</TargetFramework>
@@ -16,10 +16,11 @@
     <SolutionRootPath>src</SolutionRootPath>
   </PropertyGroup>
 
-  <!-- Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both) -->
+  <!-- Solution Packager overrides, un-comment to use: SolutionPackagerType (Managed, Unmanaged, Both)  -->
   <PropertyGroup>
-    <SolutionPackageType>Unmanaged</SolutionPackageType>
+    <SolutionPackageType>Both</SolutionPackageType>
   </PropertyGroup>
+
   
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerApps.MSBuild.Solution" Version="1.*" />
@@ -42,7 +43,7 @@
   </ItemGroup>
   
   <ItemGroup>
-    <ProjectReference Include="c:\Projects\GroupApprovalViewer\pcf.pcfproj" />
+    <ProjectReference Include="c:\Projects\group-approval-viewer-fluent\projects.pcfproj" />
   </ItemGroup>
 
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />

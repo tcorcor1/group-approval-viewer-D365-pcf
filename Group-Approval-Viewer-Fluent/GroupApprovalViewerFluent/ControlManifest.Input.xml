@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="tc" constructor="GroupApprovalViewerFluent" version="1.0.0" display-name-key="Group Approval Viewer (Fluent)" description-key="Provides visibility into status of Power Automate group approvals" control-type="standard" preview-image="img/preview.png">
+    <property name="ApprovalId" display-name-key="Approval Id" description-key="Power Automate Approval Lookup" of-type="Lookup.Simple" usage="bound" required="true" />
+    <property name="ViewerTitle" display-name-key="Viewer Title" description-key="Please provide a title for your approval grid" default-value="APPROVAL PROGRESS SUMMARY" of-type="SingleLine.Text" usage="input" required="true" />
+    <resources>
+      <code path="index.ts" order="1"/>
+      <css path="css/styles.css" order="1" />
+    </resources>
+    <feature-usage>
+      <uses-feature name="WebAPI" required="true" />
+    </feature-usage>
+  </control>
+</manifest>

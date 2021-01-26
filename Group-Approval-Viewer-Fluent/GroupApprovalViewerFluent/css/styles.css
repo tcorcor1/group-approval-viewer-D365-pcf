@@ -1,0 +1,28 @@
+h2 {
+    font-weight: normal;
+    font-size: 1.21429rem;
+}
+
+.approval-head {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-Items: center;
+}
+
+.icon {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.icon-approve {
+    color: #008000;
+}
+
+.icon-reject {
+    color: #FF0000;
+}
+
+.search-input {
+    min-width: 35%;
+}
